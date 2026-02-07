@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #570063;
+  color: #fff;
+}
+
+/* MENU */
+.menu{
+  background: #f3f6f1;
+}
+
+.menu-item{
+  display: block;
+  border: 1px solid black;
+  background: #fff;
+  margin: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.menu-item:hover{
+  background: #ccc;
+}
+
+
+form{
+  max-width: 600px;        /* largeur du formulaire */
+  margin: 40px auto;       /* centre horizontalement */
+  padding: 25px;
+
+  background-color: #fff;  /* fond blanc */
+  border: 1px solid #ccc;  /* cadre */
+  border-radius: 6px;      /* coins arrondis */
+
+
+}
+
+label{
+  display: block;
+}
+
+input[type=text],input[type=date],input[type=number],select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 12px;
+
+}
+
+input[type=submit],input[type=button] {
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+
+.inline-submit{
+  margin-right: 12px;
+}
+
+/* ALERT */
+.alert{
+  margin: 12px 12px;
+  padding: 18px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.alert.success{
+  background-color: #28a745;
+}
+
+.alert.warning{
+  background-color: #ffc107;
+}
+
+.alert.error{
+  background-color: #dc3545;
+}
+
+.alert.info{
+  background-color: #17a2b8;
+}
+
+.form-submit {
+    margin-top: 10px;
+}
+.form-submit input {
+    display: block;
+}

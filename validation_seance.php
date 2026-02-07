@@ -1,0 +1,68 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+ <?php 
+    $date = date("Y-m-d");
+    ?>
+
+<body>
+  <h1 class="form-title">Validation d'une séance</h1>
+  <FORM METHOD='POST' ACTION='valider_seance.php' >
+  
+
+  <label for='theme'>séance</label>
+  <select id='theme' name='idseance' required>
+   
+    <?php
+      
+      $dbhost = 'tuxa.sme.utc';
+      $dbuser = 'nf92a007'; // remplacer les SXXX avec le semestre et le
+      //numero de votre compte
+      // exemples nf92p014 ou nf92a078
+      $dbpass = '03ztVCZs8gJg'; // remplacer votremotdepasse par votre
+      //mot de passe
+      $dbname = 'nf92a007'; // remplacer les SXXX comme indiqué ci-desus
+      $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die
+      ('Error connecting to mysql');
+      //la ligne suivante permet d'éviter les problèmes d'accent entre la page
+      //ouèbe et le serveur mysql
+      mysqli_set_charset($connect, 'utf8'); //les données envoyées vers mysql sont
+      //encodées en UTF-8
+
+      $result = mysqli_query($connect,"SELECT idseance , dateseance , nom 
+      FROM seances 
+      INNER JOIN themes ON seances.idtheme = themes.idtheme 
+      WHERE DateSeance <= '$date' ORDER BY DateSeance;"); 
+      
+      if(mysqli_num_rows($result) > 0){
+        while ($row = mysqli_fetch_array($result, MYSQLI_NUM))
+        {
+          
+                echo
+                "<option value =".$row[0].">".$row[1]." : ". $row[2]."</option>";
+          
+        }
+      }
+      else{
+         echo"<option value='' disabled selected>Auncune sèance passé</option>";
+      }
+
+      mysqli_close($connect);
+
+    ?>
+
+  </select>
+  <div>
+    <input type='submit' value='OK'>
+  </div>
+</FORM>
+
+
+
+
+
+</body>
+</html>
