@@ -1,21 +1,21 @@
 # SiteWeb-Auto-Ecole
 
-##🚗 Driving School Session Management System
+## 🚗 Driving School Session Management System
 
 A web application designed to manage theory training sessions for a driving school.
 The platform allows administrators to manage students, schedule sessions, organize themes, and track participation and results.
 
 The system is built using PHP, MySQL, HTML, and CSS, and demonstrates a full-stack workflow involving relational database design, dynamic web pages, and server-side processing.
 
-##📌 Overview
+## 📌 Overview
 
 Driving schools frequently organize theory training sessions covering different topics of road regulations. Managing these sessions manually can quickly become complex when multiple students, sessions, and topics are involved.
 
 This application provides a structured system to:
 
--Register and manage students
+- Register and manage students
 
--Create and manage theory topics
+- Create and manage theory topics
 
 -Schedule theory sessions
 
