@@ -17,57 +17,57 @@ This application provides a structured system to:
 
 - Create and manage theory topics
 
--Schedule theory sessions
+- Schedule theory sessions
 
--Register students for sessions
+- Register students for sessions
 
--Track attendance and results
+- Track attendance and results
 
--View future schedules
+- View future schedules
 
 The system ensures data consistency by validating inputs and maintaining relationships between students, sessions, and topics.
 
-🧩 Features
-Student Management
+## 🧩 Features
+**Student Management**
 
-Add new students
+- Add new students
 
-Store personal information (name, birth date, registration date)
+- Store personal information (name, birth date, registration date)
 
-Consult student records
+- Consult student records
 
-Theme Management
+**Theme Management**
 
-Create theory themes (topics)
+- Create theory themes (topics)
 
-Reactivate previously deleted themes
+- Reactivate previously deleted themes
 
-Prevent use of deleted themes when creating sessions
+- Prevent use of deleted themes when creating sessions
 
-Session Scheduling
+**Session Scheduling**
 
-Plan theory sessions linked to a specific theme
+- Plan theory sessions linked to a specific theme
 
-Define session date and maximum capacity
+- Define session date and maximum capacity
 
-Prevent creation of conflicting sessions
+- Prevent creation of conflicting sessions
 
-Session Registration
+**Session Registration**
 
-Register students to sessions
+- Register students to sessions
 
-Ensure sessions do not exceed capacity
+- Ensure sessions do not exceed capacity
 
-Allow student cancellation before the session date
+- Allow student cancellation before the session date
 
-Session Validation
+**Session Validation**
 
-Record student results after a session
+- Record student results after a session
 
-Update results if needed
+- Update results if needed
 
-Manage score tracking
+- Manage score tracking
 
-Calendar View
+**Calendar View**
 
-Display upcoming sessions for a selected student
+- Display upcoming sessions for a selected student
